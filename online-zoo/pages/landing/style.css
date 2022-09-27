@@ -190,7 +190,7 @@ button {
 	color: #FFEE2E;
 }
 
-.panda__button {
+.panda__button, .pets__button {
 	width: 298px;
 	height: 54px;
 	border-radius: 25px;
@@ -202,12 +202,12 @@ button {
 	transition: 0.2s ease;
 }
 
-.panda__button:hover {
+.panda__button:hover, .pets__button:hover {
 	box-shadow: inset 0 0 0 1.8em #E47209;
 	transition: 0.2s ease;
 }
 
-.panda__button:active {
+.panda__button:active, .pets__button:active {
 	box-shadow: inset 0 0 0 1.8em var(--green);
 	transition: 0.2s ease;
 }
@@ -263,10 +263,11 @@ button {
 .pets__card {
 	border-radius: 5px;
 	border: 1px solid #FA6F32;
+	cursor: pointer;
 }
 
 .pets__content {
-	margin: 8px 16px 14px 11px;
+	margin: 0 16px 12px 13px;
 }
 
 .pets__name {
@@ -280,8 +281,23 @@ button {
 	line-height: 120%;
 }
 
+.pets__img-container {
+	display: inline-block;
+	overflow: hidden;
+}
+
 .pets__img {
 	border-radius: 5px 5px 0 0;
+}
+
+.pets__card:hover .pets__img{
+	transform: scale(1.07);
+	transition: ease 0.5s;
+}
+
+.pets__card:hover {
+	background-color: var(--gray_smoky);
+	transition: ease 0.5s;
 }
 
 .pets__content.banana{
@@ -291,6 +307,33 @@ button {
 .pets__content.meet{
 	background: url(../../assets/icons/meet-fish.svg) 100% 40% no-repeat;
 }
+
+.pets__button {
+	display: block;
+	margin: 80px auto 100px;
+}
+
+/*Pick and feed a friend*/
+
+.food {
+	background: var(--orange_grad);
+}
+
+.food__container {
+	background: var(--frosted_glass);
+	padding: 69px 0 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

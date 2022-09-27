@@ -66,9 +66,12 @@
 	<!-- Pets -->
 
 	<section class="pets">
-		<div class="pets__container container">
+		<div class="container">
+			<div class="pets__container">
 				<div class="pets__card">
-					<img src="../../assets/images/rectangle1.jpg" alt="petsImg" class="pets__img">
+					<div class="pets__img-container">
+						<img src="../../assets/images/rectangle1.jpg" alt="petsImg" class="pets__img">
+					</div>
 					<div class="pets__content banana">
 						<h3 class="pets__name">giant Pandas</h3>
 						<p class="pets__native">Native to Southwest China</p>
@@ -76,15 +79,19 @@
 				</div>
 
 				<div class="pets__card">
-					<img src="../../assets/images/rectangle2.jpg" alt="petsImg" class="pets__img">
+					<div class="pets__img-container">
+						<img src="../../assets/images/rectangle2.jpg" alt="petsImg" class="pets__img">
+					</div>
 					<div class="pets__content meet">
 						<h3 class="pets__name">Eagles</h3>
-						<p class="pets__native">Native to Southwest China</p>
+						<p class="pets__native">Native to South America</p>
 					</div>
 				</div>
 
 				<div class="pets__card">
-					<img src="../../assets/images/rectangle3.jpg" alt="petsImg" class="pets__img">
+					<div class="pets__img-container">
+						<img src="../../assets/images/rectangle3.jpg" alt="petsImg" class="pets__img">
+					</div>
 					<div class="pets__content banana">
 						<h3 class="pets__name">Gorillas</h3>
 						<p class="pets__native">Native to Congo</p>
@@ -92,7 +99,9 @@
 				</div>
 
 				<div class="pets__card">
-					<img src="../../assets/images/rectangle5.jpg" alt="petsImg" class="pets__img">
+					<div class="pets__img-container">
+						<img src="../../assets/images/rectangle5.jpg" alt="petsImg" class="pets__img">
+					</div>
 					<div class="pets__content banana">
 						<h3 class="pets__name">Two-toed Sloth</h3>
 						<p class="pets__native">Mesoamerica, South America</p>
@@ -100,7 +109,9 @@
 				</div>
 
 				<div class="pets__card">
-					<img src="../../assets/images/rectangle6.jpg" alt="petsImg" class="pets__img">
+					<div class="pets__img-container">
+						<img src="../../assets/images/rectangle6.jpg" alt="petsImg" class="pets__img">
+					</div>
 					<div class="pets__content meet">
 						<h3 class="pets__name">cheetahs</h3>
 						<p class="pets__native">Native to Africa</p>
@@ -108,41 +119,45 @@
 				</div>
 
 				<div class="pets__card">
-					<img src="../../assets/images/rectangle7.jpg" alt="petsImg" class="pets__img">
+					<div class="pets__img-container">
+						<img src="../../assets/images/rectangle7.jpg" alt="petsImg" class="pets__img">
+					</div>
 					<div class="pets__content meet">
 						<h3 class="pets__name">Penguins</h3>
 						<p class="pets__native">Native to Antarctica</p>
 					</div>
 				</div>
-
-			<h3 class="pets__button">choose your favorite</h3>
+			</div>
+			<button class="pets__button">choose your favorite</button>
 		</div>
 	</section>
 
 	<!-- Pick and feed a friend -->
 	<section class="food">
 		<div class="container">
-			<h2 class="food__title">Pick and feed a friend</h2>
-			<h3 class="food__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</h3>
-			<p class="food__covid">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-			<p class="food__donate">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a class="food__link-donate">Emergency Support Fund</a> . </p>
+			<div class="food__container">
+				<h2 class="food__title">Pick and feed a friend</h2>
+				<h3 class="food__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</h3>
+				<p class="food__covid">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
+				<p class="food__donate">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a class="food__link-donate">Emergency Support Fund</a> . </p>
 
-			<h3 class="food__subtitle-work">How it works</h3>
-			<div class="widjet">
-				<div class="widjet__card">
-					<div class="widjet__img"></div>
-					<p class="widjet__text">Pay with card</p>
+				<h3 class="food__subtitle-work">How it works</h3>
+				<div class="widjet">
+					<div class="widjet__card">
+						<div class="widjet__img"></div>
+						<p class="widjet__text">Pay with card</p>
+					</div>
+					<div class="widjet__card">
+						<div class="widjet__img"></div>
+						<p class="widjet__text">Payment goes to the zoo</p>
+					</div>
+					<div class="widjet__card">
+						<div class="widjet__img"></div>
+						<p class="widjet__text">Your favourite animal gets delicious dish</p>
+					</div>
 				</div>
-				<div class="widjet__card">
-					<div class="widjet__img"></div>
-					<p class="widjet__text">Payment goes to the zoo</p>
-				</div>
-				<div class="widjet__card">
-					<div class="widjet__img"></div>
-					<p class="widjet__text">Your favourite animal gets delicious dish</p>
-				</div>
+				<button class="food__button">Feed a friend now</button>
 			</div>
-			<button class="food__button">Feed a friend now</button>
 		</div>
 	</section>
 
