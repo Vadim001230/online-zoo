@@ -35,7 +35,7 @@ body {
     font-size: 16px;
     font-style: normal;
     background: #FFF;
-    color: #000;
+    color: var(--black_blue);;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -317,24 +317,119 @@ button {
 
 .food {
 	background: var(--orange_grad);
-}
-
-.food__container {
-	background: var(--frosted_glass);
 	padding: 69px 0 100px;
 }
 
+.food__container {
+	display: block;
+	background: var(--frosted_glass);
+	border-radius: 20px;
+}
+
+.food__title {
+	text-align: center;
+	color: #FE9013;
+	font-size: 48px;
+	line-height: 120%;
+	padding-top: 40px;
+}
+
+.food__subtitle {
+	margin: 30px 0 42px 100px;
+	font-size: 24px;
+}
+
+.food__covid {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+	margin-left: 100px;
+}
+
+.food__donate {
+	line-height: 130%;
+	margin: 10px 0 60px 100px;
+}
+
+.food__donate-link {
+	color: var(--black_blue);
+	border-bottom: 1px solid #FE9013;
+	text-decoration: none;
+}
+
+.food__donate-link:hover {
+	color: #FE9013;
+	transition: color ease 0.2s;
+}
+
+.food__subtitle-work {
+	text-align: center;
+	font-size: 36px;
+	line-height: 130%;
+	margin-bottom: 40px;
+}
 
 
 
+.food__button {
+	width: 298px;
+	height: 54px;
+	border-radius: 25px;
+	background: var(--orange);
+	font-size: 16px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-top: 60px;
+	margin-bottom: 60px;
+	transition: 0.2s ease;
 
+}
 
+.food__button:hover {
+	box-shadow: inset 0 0 0 1.8em #E47209;
+	transition: 0.2s ease;
+}
 
+.food__button:active {
+	box-shadow: inset 0 0 0 1.8em var(--green);
+	transition: 0.2s ease;
+}
 
+.widjet {
+	display: flex;
+	justify-content: space-between;
+	width: 764px;
+	margin: 0 auto;
+}
 
+.widjet__card {
+	width: 168px;
+}
 
+.widjet__img-conteiner {
+	width: 168px;
+	height: 168px;
+	border-radius: 5px;
+	background: #FFF;
+	border: 1px solid #FA6F32;
+}
 
+.widjet__img {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
 
+.widjet__text {
+	margin-top: 31px;
+	line-height: 140%;
+}
+
+.widjet__arrow {
+	margin-top: 60px;
+}
 
 
 
