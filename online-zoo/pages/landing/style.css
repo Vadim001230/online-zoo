@@ -19,7 +19,7 @@
 	box-sizing: border-box;
 }
 
- h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6, p {
  	margin: 0;
     font-weight: inherit;
     font-size: inherit;
@@ -34,7 +34,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
-    background: #E5E5E5;
+    background: #FFF;
     color: #000;
     margin: 0;
     padding: 0;
@@ -149,7 +149,7 @@ button {
 /*Watch your favorite animal online*/
 
 .panda {
-	background: url(../../assets/images/panda.jpg) no-repeat;
+	background: url(../../assets/images/panda.jpg) center no-repeat;
 	background-size: cover;
 	height: 700px;
 }
@@ -212,30 +212,85 @@ button {
 	transition: 0.2s ease;
 }
 
+/*Backstage*/
 
+.backstage {
+	margin: 140px 0 177px 0;
+}
 
+.backstage__container {
+	display: flex;
+	justify-content: space-between;
+	color: var(--black_blue);
+}
 
+.backstage__content {
+	display: flex;
+	flex-direction: column;
+	margin-left: 87px;
+}
 
+.backstage__title {
+	font-size: 48px;
+	line-height: 120%;
+}
 
+.backstage__subtitle {
+	font-size: 24px;
+	line-height: 120%;
+	margin-top: 54px;
+	margin-bottom: 14px;
+}
 
+.backstage__content p {
+	font-size: 16px;
+	line-height: 130%;
+	margin-top: 20px;
+}
 
+.backstage__content p:last-child {
+	line-height: 140%;
+} 
 
+/*Pets*/
 
+.pets__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px 30px;
+}
 
+.pets__card {
+	border-radius: 5px;
+	border: 1px solid #FA6F32;
+}
 
+.pets__content {
+	margin: 8px 16px 14px 11px;
+}
 
+.pets__name {
+	text-transform: uppercase;
+	font-weight: 500;
+}
 
+.pets__native {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 120%;
+}
 
+.pets__img {
+	border-radius: 5px 5px 0 0;
+}
 
+.pets__content.banana{
+	background: url(../../assets/icons/banana-bamboo.svg) 100% 40% no-repeat;
+}
 
-
-
-
-
-
-
-
-
+.pets__content.meet{
+	background: url(../../assets/icons/meet-fish.svg) 100% 40% no-repeat;
+}
 
 
 
