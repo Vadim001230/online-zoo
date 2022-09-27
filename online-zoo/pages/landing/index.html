@@ -4,39 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="google" content="notranslate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../assets/icons/monkey.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Online-zoo</title>
+	<script src="script.js"></script>
 </head>
 <body>
 
 <!-- Header -->
-	<header class="header">
-		<div class="container">
-			<div class="header__logo">
-				<h1>PetStory online</h1>
-			</div>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link active">About</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Map</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Zoos</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Donate</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Contacts us</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Designed by ©</a></li>
-				</ul>
-			</nav>
+<header class="header">
+	<div class="container">
+		<div class="header__logo">
+			<h1><a href="index.html">PetStory online</a></h1>
 		</div>
-	</header>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html" class="nav__link active">About</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Map</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Zoos</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Donate</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Contacts us</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Designed by ©</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
 
 <!-- Watch your favorite animal online -->
-	<section class="panda">
+<section class="panda">
+	<div class="container">
 		<div class="panda__circle"></div>
 		<h2 class="panda__text">Watch your <span>favorite</span> animal online</h2>
 		<button class="panda__button">watсh online</button>
-	</section>
+	</div>
+</section>
 	
 <!-- The Backstage -->
-	<section class="backstage">
+<section class="backstage">
+	<div class="container">
 		<div class="backstage__img">
 			
 		</div>
@@ -46,34 +54,96 @@
 			<h3 class="backstage__subtitle">How it works </h3>
 			<p>The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
 		</div>
-	</section>
+	</div>
+</section>
 
 <!-- Pets -->
 
 <section class="pets">
+	<div class="container">
+		<div class="pets__container">	
+			<div class="pets__card">
+				<img src="../../assets/images/rectangle1.jpg" alt="petsImg" class="pets__img">
+				<button class="pets__name">giant Pandas</button>
+				<p class="pets__native">Native to Southwest China</p>
+			</div>
 
-	<div class="pets__card">
-		<img src="../../assets/images/rectangle1.jpg" alt="petsImg" class="pets__img">
-		<button class="pets__name">giant Pandas</button>
-		<p class="pets__area">Native to Southwest China</p>
-	</div>
-		<div class="pets__card">
-		<img src="../../assets/images/rectangle1.jpg" alt="petsImg" class="pets__img">
-		<button class="pets__name">Eagles</button>
-		<p class="pets__area">Native to Southwest China</p>
-	</div>
-		<div class="pets__card">
-		<img src="../../assets/images/rectangle1.jpg" alt="petsImg" class="pets__img">
-		<button class="pets__name">giant Pandas</button>
-		<p class="pets__area">Native to Southwest China</p>
-	</div>
-		<div class="pets__card">
-		<img src="../../assets/images/rectangle1.jpg" alt="petsImg" class="pets__img">
-		<button class="pets__name">giant Pandas</button>
-		<p class="pets__area">Native to Southwest China</p>
-	</div>
+			<div class="pets__card">
+				<img src="../../assets/images/rectangle2.jpg" alt="petsImg" class="pets__img">
+				<button class="pets__name">Eagles</button>
+				<p class="pets__native">Native to Southwest China</p>
+			</div>
 
+			<div class="pets__card">
+				<img src="../../assets/images/rectangle3.jpg" alt="petsImg" class="pets__img">
+				<button class="pets__name">Gorillas</button>
+				<p class="pets__native">Native to Congo</p>
+			</div>
+
+			<div class="pets__card">
+				<img src="../../assets/images/rectangle5.jpg" alt="petsImg" class="pets__img">
+				<button class="pets__name">Two-toed Sloth</button>
+				<p class="pets__native">Mesoamerica, South America</p>
+			</div>
+
+			<div class="pets__card">
+				<img src="../../assets/images/rectangle6.jpg" alt="petsImg" class="pets__img">
+				<button class="pets__name">cheetahs</button>
+				<p class="pets__native">Native to Africa</p>
+			</div>
+
+			<div class="pets__card">
+				<img src="../../assets/images/rectangle7.jpg" alt="petsImg" class="pets__img">
+				<button class="pets__name">Penguins</button>
+				<p class="pets__native">Native to Antarctica</p>
+			</div>
+		</div>
+
+		<button class="pets__button">choose your favorite</button>
+	</div>
 </section>
+
+<!-- Pick and feed a friend -->
+<section class="food">
+	<div class="container">
+		<h2 class="food__title">Pick and feed a friend</h2>
+		<h3 class="food__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</h3>
+		<p class="food__covid">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
+		<p class="food__donate">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a class="food__link-donate">Emergency Support Fund</a> . </p>
+
+		<h3 class="food__subtitle-work">How it works</h3>
+		<div class="widjet">
+			<div class="widjet__card">
+				<div class="widjet__img"></div>
+				<p class="widjet__text">Pay with card</p>
+			</div>
+			<div class="widjet__card">
+				<div class="widjet__img"></div>
+				<p class="widjet__text">Payment goes to the zoo</p>
+			</div>
+			<div class="widjet__card">
+				<div class="widjet__img"></div>
+				<p class="widjet__text">Your favourite animal gets delicious dish</p>
+			</div>
+		</div>
+		<button class="food__button">Feed a friend now</button>
+	</div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+	<div class="container">
+
+	</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+
+	</div>
+</footer>
 
 </body>
 </html>
