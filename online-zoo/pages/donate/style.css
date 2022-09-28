@@ -155,10 +155,77 @@ button {
 	height: 390px;
 }
 
+/*Pick and feed a friend */
+
+.donate {
+	background: var(--orange_grad);
+	color: #FFF;
+	padding-bottom: 180px;
+}
+
+.donate__title {
+	font-size: 36px;
+	line-height: 130%;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 8px;
+}
+
+.donate__text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+.donation__subtitle {
+	font-size: 36px;
+	line-height: 130%;
+	color: #FE9013;
+	margin-top: 40px;
+	padding-bottom: 60px;
+}
+
+.card {
+	display: block;
+	background: rgba(255, 255, 255, 0.52);
+	backdrop-filter: blur(2px);
+	border-radius: 20px;
+/*!!!!!!!!*/height: 964px;
+
+
+}
+.card__conteiner {
+	margin: 0 92px 60px;
+}
+.card__title {
+	font-size: 48px;
+	line-height: 120%;
+	text-align: center;
+	color: #FE9013;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.card__text {
+	font-size: 24px;
+	line-height: 120%;
+	color: var(--black_blue);
+}
+
+
+
+
+
+
+
+
+
+
 /*Footer*/
 
 .footer {
 	background: #111115;
+
 }
 
 .footer__header {
