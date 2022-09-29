@@ -60,23 +60,42 @@
 					<div class="card__cross">×</div>
 					<div class="card__panda"><img src="../../assets/icons/panda_widget.svg" alt="panda_widget"></div>
 				</div>
-<p class="small">Amount</p>
-	<div class="donat_range">
-		<input class="range-input" type="range" list="donation_list" value="3" min="1" max="8">
-		<datalist id="donation_list">
-			<option value="1" class="range-label">$5000</option>
-			<option value="2" class="range-label">$2000</option>
-			<option value="3" class="range-label donat_range-active">$1000</option>
-			<option value="4" class="range-label">$500</option>
-			<option value="5" class="range-label">$250</option>
-			<option value="6" class="range-label">$100</option>
-			<option value="7" class="range-label">$50</option>
-			<option value="8" class="range-label">$25</option>
-		</datalist>
-</div>
 
+				<p class="small">Amount</p>
+				<div class="donat_range">
+					<input class="range-input" type="range" list="donation_list" value="3" min="1" max="8">
+					<datalist id="donation_list">
+						<option value="1" class="range-label">$5000</option>
+						<option value="2" class="range-label">$2000</option>
+						<option value="3" class="range-label donat_range-active">$1000</option>
+						<option value="4" class="range-label">$500</option>
+						<option value="5" class="range-label">$250</option>
+						<option value="6" class="range-label">$100</option>
+						<option value="7" class="range-label">$50</option>
+						<option value="8" class="range-label">$25</option>
+					</datalist>
+				</div>
+
+					<form class="card__form">
+						<div class="card__input-conteiner">
+							<input type="number" class="card__input-amount" maxlength="4" size="4" placeholder="Another amount"/>
+						</div>
+						<div class="card__radio-container">
+							<div class="card__radio">
+								<input type="radio" name="event" id="card__input-monthly"/>
+								<label for="card__input-monthly">Monthly</label>
+							</div>
+							<div class="card__radio">
+								<input type="radio" name="event" id="card__input-once" checked />
+								<label for="card__input-once">Once</label>
+							</div>
+						</div>
+					</form>
+					<button class="card__btn">Feed a friend now</button>
+					<p class="card__p">Share with your friends on social networks</p>
+					
 			</div>
-		</div>
+		</div><!-- Card -->
 	</div>
 	</section>
 </main>
