@@ -490,20 +490,20 @@ datalist .donat_range-active {
 }
 
 .footer__form input[type=email] {
-    width: 228px;
-    outline: none;
-    background: #111115;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    font-size: 1rem;
-    color: #FFF;
-    padding: 10px;
-    border: 0.7px solid;
-    border-image: var(--orange);
-    border-image-slice: 1;
-    margin-right: 10px;
-    margin-top: 14px;
+	width: 228px;
+	outline: none;
+	background: #111115;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	font-size: 1rem;
+	color: #FFF;
+	padding: 10px;
+	border: 0.7px solid;
+	border-image: var(--orange);
+	border-image-slice: 1;
+	margin-right: 10px;
+	margin-top: 14px;
 }
 
 .footer__btn {
@@ -514,7 +514,6 @@ datalist .donat_range-active {
 	margin-left: auto;
 	font-size: 16px;
 	transition: 0.2s ease;
-
 }
 
 .footer__btn a {
@@ -645,8 +644,6 @@ datalist .donat_range-active {
 .footer__social-link:hover svg circle {
 	fill: green;
 }
-
-
 
 
 
