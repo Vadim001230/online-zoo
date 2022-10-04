@@ -655,8 +655,9 @@ datalist .donat_range-active {
 
 /*Media*/
 
-@media (max-width: 1440px) {	
+@media (max-width: 1440px) {
 
+/*header*/
 .header {
 	position: relative;
 	z-index: 20;
@@ -670,8 +671,63 @@ datalist .donat_range-active {
 	margin-right: 48px;
 }
 
+/*Donate*/
+
+.donate {
+	padding-bottom: 30px;
+}
+
+.donate__title {
+	text-align: left;
+	width: 800px;
+}
+
+.donate__text {
+	margin-top: 22px;
+}
+
+.donation__subtitle {
+	margin-top: 46px;
+	padding-bottom: 38px;
+}
+
+.card__conteiner {
+	margin: 0 50px;
+}
+
+.card__title {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.card__text {
+	width: 900px;
+}
+
+.small {
+	width: 800px;
+}
+
+.donat_range {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.card__input-conteiner {
+	margin-bottom: 5px;
+}
+
+.card__p {
+	padding-bottom: 50px;
+}
+
+/*footer*/
 .footer .container {
-	max-width: 915px;
+	max-width: 940px;
+}
+
+.footer__subscribe {
+	margin-right: 30px;
 }
 
 }
