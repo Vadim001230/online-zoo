@@ -740,12 +740,8 @@ datalist .donat_range-active {
 	width: 100%;
 }
 
-main {
-	padding-top: 34px;
-}
-
 .container {
-	max-width: 600px;
+	max-width: 580px;
 }
 
 .burger {
@@ -820,6 +816,37 @@ main {
 	padding-top: 0; 
 	line-height: 100%;
 }
+
+.panda {
+	height: 370px;
+}
+
+/*donate*/
+
+.donate__title {
+	font-size: 24px;
+	width: 600px;
+	padding-top: 30px;
+}
+
+.donate__text {
+	padding-top: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*footer*/
 
