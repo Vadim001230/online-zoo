@@ -823,26 +823,103 @@ datalist .donat_range-active {
 
 /*donate*/
 
+.donate {
+	padding-bottom: 45px;
+}
+
 .donate__title {
 	font-size: 24px;
 	width: 600px;
 	padding-top: 30px;
+	line-height: 120%;
 }
 
 .donate__text {
-	padding-top: 28px;
+	padding-top: 0px;
+	margin-top: 10px;
+	width: 600px;
 }
 
+.donation__subtitle {
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
 
+.card__title {
+	padding-top: 28px;
+	padding-bottom: 20px;
+}
 
+.card__conteiner {
+	margin: 0;
+}
 
+.card__text {
+	width: 507px;
+	text-align: center;
+	margin: 0 auto;
+}
 
+.card__eat {
+	margin-top: 50px;
+}
 
+.card {
+	width: 600px;
+	margin: 0;
+}
 
+.small {
+	width: 600px;
+	margin-left: 10px;
+	margin-top: 40px;
+	margin-bottom: 8px;
+}
 
+.donat_range {
+	width: 600px;
+}
 
+.donat_range input {
+	width: 600px;
+}
 
+.donat_range::before {
+	width: 600px;
+}
 
+datalist {
+	grid-template-columns: repeat(5, 1fr);
+	width: 600px;
+	left: 0;
+}
+
+#donation_list option:nth-child(1), 
+#donation_list option:nth-child(2), 
+#donation_list option:nth-child(3) {
+	display: none;
+}
+
+.card__input-amount {
+	width: 180px;
+	height: 42px;
+}
+
+.card__input-conteiner {
+	width: 180px;
+	height: 42px;
+	margin-bottom: 10px;
+}
+
+.card__input-conteiner:after {
+	top: 6px;
+	right: 12px;
+	font-size: 22px;
+}
+
+.card__p {
+	padding-bottom: 35px;
+}
 
 
 
