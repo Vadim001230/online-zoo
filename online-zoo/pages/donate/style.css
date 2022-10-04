@@ -933,6 +933,7 @@ datalist {
 
 .footer .container {
 	max-width: 580px;
+	position: relative;
 }
 
 .footer__header {
@@ -951,7 +952,7 @@ datalist {
 
 .footer__nav {
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	text-align: left;
 }
 
