@@ -1141,13 +1141,8 @@ main {
 }
 
 .backstage__right {
-	width: 20%;
-	height: 20%;
-}
-
-.backstage__right {
-	width: 24%;
-	height: 120%;
+	width: 120px;
+	height: 450px;
 	right: 0;
 }
 
@@ -1434,10 +1429,10 @@ main {
 }
 
 .backstage__right {
-	width: 22%;
-	height: 62%;
+	width: 34px;
+	height: 170px;
 	right: 0;
-	top: 16%;
+	top: 10%;
 }
 
 .backstage {
