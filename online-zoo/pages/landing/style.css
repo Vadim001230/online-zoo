@@ -992,6 +992,7 @@ button {
 
 .testimonials__progress {
 	margin-bottom: 48px;
+   max-width: 41%;
 }
 
 .testimonials__btn {
@@ -1320,6 +1321,7 @@ main {
 
 .footer .container {
 	max-width: 580px;
+	position: relative;
 }
 
 .footer__header {
@@ -1338,7 +1340,7 @@ main {
 
 .footer__nav {
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	text-align: left;
 }
 
@@ -1352,8 +1354,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	right: 4px;
 	top: 0;
+	right: 0;
 }
 
 .footer__social-two a {
