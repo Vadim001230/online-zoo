@@ -165,7 +165,7 @@ button {
 .donate {
 	background: var(--orange_grad);
 	color: #FFF;
-	padding-bottom: 110px;
+	padding-bottom: 123px;
 }
 
 .donate__title {
@@ -287,6 +287,7 @@ button {
   -webkit-appearance: none;
   background-color: rgba(0, 0, 0, 0);
 }
+
 .donat_range input::-webkit-slider-thumb {
   padding: 20px;
   margin-top: -47px;
@@ -296,19 +297,21 @@ button {
   -webkit-appearance: none;
   background-image: URL("../../assets/icons/circle.svg");
 }
+
 datalist {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   margin-top: 5px;
-  width: 109.5%;
+  width: 1025px;
   position: relative;
-  left: -50px;
+  left: -25px;
   z-index: 3;
   font-weight: 500;
   font-size: 26px;
   line-height: 140%;
   color: #333b41;
 }
+
 datalist option {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -358,9 +361,11 @@ datalist .donat_range-active {
 	width: 255px;
 	height: 54px;
 	margin-top: 50px;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 }
+
 .card__input-amount {
+	font-size: 16px;
 	height: 54px;
 	width: 268px;
 	border-radius: 2px;
@@ -381,11 +386,11 @@ datalist .donat_range-active {
 }
 
 .card__radio-container {
-	margin: 0 auto 30px;
+	margin: 0 auto 33px;
 	gap: 75px;
 	display: flex;
 	color: var(--black_blue);
-	width: 180px;
+	width: 160px;
 }
 
 .card__radio input {
@@ -418,7 +423,6 @@ datalist .donat_range-active {
 	height: 54px;
 	border-radius: 25px;
 	background: var(--orange);
-	margin-left: auto;
 	font-size: 16px;
 	transition: 0.2s ease;
 	color: #FFF;
@@ -560,14 +564,12 @@ datalist .donat_range-active {
 
 .footer__social {
 	padding: 0;
-	margin: 40px 0 0;
-
+	margin: 37px 0 0;
 }
 
 .footer__social-link {
 	list-style: none;
 	margin-bottom: 3px;
-
 }
 
 .footer__social-link a {
@@ -588,7 +590,7 @@ datalist .donat_range-active {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	margin-left: 20px;
+	margin-left: 25px;
 	padding-bottom: 18px;
 	margin-bottom: -15px;
 }
@@ -639,7 +641,7 @@ datalist .donat_range-active {
 }
 
 .footer__social-link svg {
-	margin-right: 12px;
+	margin-right: 10px;
 	position: relative;
 	transition: 0.3s ease;
 	top: 7px;
@@ -674,7 +676,7 @@ datalist .donat_range-active {
 /*Donate*/
 
 .donate {
-	padding-bottom: 30px;
+	padding-bottom: 27px;
 }
 
 .donate__title {
@@ -691,21 +693,34 @@ datalist .donat_range-active {
 	padding-bottom: 38px;
 }
 
+.card__num {
+	margin: 108px -12px 0px;
+}
+
+.card__num span {
+	margin-bottom: 10px;
+}
+
 .card__conteiner {
-	margin: 0 50px;
+	margin: 0 47px;
 }
 
 .card__title {
 	padding-top: 20px;
 	padding-bottom: 10px;
+	margin-right: 10px;
 }
 
 .card__text {
-	width: 900px;
+	width: 850px;
+}
+
+.card__cross {
+	margin-top: 115px;
 }
 
 .small {
-	width: 800px;
+	margin-left: 17px;
 }
 
 .donat_range {
@@ -713,6 +728,19 @@ datalist .donat_range-active {
 	margin: 0 auto;
 }
 
+datalist option::before {
+	left: 47px;
+}
+
+datalist {
+	width: 889px;
+	left: -33px;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+datalist option:first-child {
+	display: none;
+}
 .card__input-conteiner {
 	margin-bottom: 5px;
 }
@@ -728,6 +756,10 @@ datalist .donat_range-active {
 
 .footer__subscribe {
 	margin-right: 30px;
+}
+
+.footer__nav-item {
+	margin-left: 50px;
 }
 
 }
