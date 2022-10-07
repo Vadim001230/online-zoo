@@ -1480,15 +1480,15 @@ main {
 }
 
 .pets__left-img {
-	width: 16%;
-	height: 8%;
-	bottom: -65px;
+	width: 60px;
+	height: 73px;
+	bottom: -60px
 }
 
 .pets__right-img {
-	bottom: -33px;
-	width: 28%;
-	height: 5%;
+	bottom: -34px;
+	width: 70px;
+	height: 70px;
 	right: 0;
 }
 
@@ -1526,11 +1526,11 @@ main {
 }
 
 .widjet__card {
-	margin: 0 auto 30px;
+	margin: 0 auto 31px;
 }
 .widjet__card:nth-child(1)::after, .widjet__card:nth-child(3)::after {
-	transform: rotate(83deg);
-	top: 176px;
+	transform: rotate(88deg);
+	top: 180px;
    right: -45px;
 }
 
@@ -1541,7 +1541,7 @@ main {
 
 .food__button {
 	margin-bottom: 38px;
-	left: 47%;
+	left: 50%;
 	margin-top: 0;
 }
 
@@ -1615,8 +1615,8 @@ main {
 
 .footer__nav {
 	order: 2;
-	width: 300px;
-	margin-top: 30px;
+	width: 305px;
+	margin: 30px auto 0;
 }
 
 .footer__designed {
@@ -1624,8 +1624,8 @@ main {
 }
 
 .footer__nav-item {
-	margin-left: 0;
-	margin-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .footer__designed a {
