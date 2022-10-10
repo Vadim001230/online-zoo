@@ -360,10 +360,12 @@ button {
 	text-align: left;
 	background: transparent;
 	outline: none;
+	color: #929699;
 }
 
 .card__input-amount:focus {
 	border-color: var(--green);
+	color: var(--green);
 }
 
 .card__input-conteiner:after {

@@ -1053,7 +1053,7 @@ main {
 .burger__item {
 	display: block;
 	width: 18px;
-   height: 2px;
+   	height: 2px;
 	background-color: #FFF;
 	color: transparent;
 	font-size: 0;
