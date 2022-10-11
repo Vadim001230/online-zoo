@@ -1,4 +1,3 @@
-alert('Если не затруднит, отложите проверку этой работы до завтра, не успевал сделать, т.к. болел, заранее спасибо за понимание!')
 //img
 const mediaQuery1000 = window.matchMedia('(max-width: 1440px)'),
       mediaQuery640 = window.matchMedia('(max-width: 980px)'),
@@ -20,32 +19,33 @@ if (mediaQuery320.matches) {
 }
 
 //burger
-
 const blackout = document.querySelector('.blackout'),
       burger = document.querySelector('.burger'),
       body = document.querySelector('body'),
+      navList = document.querySelector('.nav__list'),
       navLinks = document.querySelectorAll('.nav__link');
 
 function openMenu() {
-  blackout.classList.toggle('display-block');
-  burger.classList.toggle('burger-rotate');
-  //navList.classList.toggle('nav__list-active');
-  body.classList.toggle('not-scroll');
-  //headerLogoBurger.classList.toggle('active');
+   blackout.classList.toggle('display-block');
+   burger.classList.toggle('burger-rotate');
+   navList.classList.toggle('nav__list-active');
+   body.classList.toggle('not-scroll');
+   for (let navLink of navLinks) {
+      navLink.classList.toggle('nav__link-active');
+   }
 }
 
 function closeMenu() {
-  blackout.classList.remove('display-block');
-  burger.classList.remove('burger-rotate');
-  //navList.classList.remove('nav__list-active');
-  body.classList.remove('not-scroll');
-  //headerLogoBurger.classList.remove('active');
+   blackout.classList.remove('display-block');
+   burger.classList.remove('burger-rotate');
+   navList.classList.remove('nav__list-active');
+   body.classList.remove('not-scroll');
 }
 
 burger.addEventListener('click', openMenu);
 blackout.addEventListener('click', closeMenu);
 for (let navLink of navLinks) {
-  navLink.addEventListener('click', closeMenu);
+navLink.addEventListener('click', closeMenu);
 }
 
 
