@@ -1,5 +1,4 @@
 //img///////////
-/*alert('Если у вас есть возможность отложить проверку этой работы до вечера, буду очень благодарен!')*/
 const mediaQuery1000 = window.matchMedia('(max-width: 1440px)'),
       mediaQuery640 = window.matchMedia('(max-width: 980px)'),
       mediaQuery320 = window.matchMedia('(max-width: 630px)'),
@@ -68,8 +67,10 @@ const popap = document.querySelector('.popap'),
       testimonialsCards = document.querySelectorAll('.testimonials__card');
       
 const openPopap = function () {
-   popap.classList.remove('popap-hidden');
-   body.classList.add('not-scroll');
+   if (mediaQuery640.matches) {
+      popap.classList.remove('popap-hidden');
+      body.classList.add('not-scroll');
+   }
 };
 
 const closePopap = function (e) {
@@ -89,45 +90,11 @@ function pointPopap() {
 }
 
 for (let testimonialsCard of testimonialsCards) {
+
    testimonialsCard.addEventListener('click', openPopap);
 }
 popapClose.addEventListener('click', closePopap);
 popap.addEventListener('click', closePopap);
 popapCard.addEventListener('mouseleave', leavePopap);
 popapCard.addEventListener('mouseenter', pointPopap);
-
-const insertContentToModal = function (e) {
-  if (e.target.className === 'testimonials__card') {
-    popapCard.innerHTML = `${e.target.innerHTML}`;
-    console.log(e.target.innerHTML)
-  } else if (e.target.className === 'testimonials__photo') {
-    popapCard.innerHTML = `${e.target.parentElement.parentElement.innerHTML}`;
-    console.log(e.target.parentElement.parentElement.innerHTML)
-  } else {
-    popapCard.innerHTML = `${e.target.parentElement.innerHTML}`;
-   console.log(e.target.parentElement.innerHTML)
-  }
-};
-/*
-const changeClassesInsertedContent = function () {
-  for (let val of popapCard.childNodes) {
-    if (val.className) {
-      val.className = `modal${val.className.slice(val.className.indexOf('_'))}`;
-    }
-  }
-};
-
-for (let i = 0; i < testimonialsCard.length; i++) {
-  testimonialsCard[i].addEventListener('click', e => {
-    insertContentToModal(e);
-    changeClassesInsertedContent();
-    openModal();
-  });
-}
-
-popap.addEventListener('click', e => {
-  if (e.target.className === 'modal' || e.target.className === 'modal__close') {
-    closeModal();
-  }
-});*/
 
