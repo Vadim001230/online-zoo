@@ -394,9 +394,22 @@ button {
 	color: #929699;
 }
 
+.card__input-amount:focus::placeholder {
+  color: var(--green);
+}
+
 .card__input-amount:focus {
 	border-color: var(--green);
 	color: var(--green);
+}
+
+.card__input-amount:focus:invalid {
+  color: var(--red);
+  border-color:var(--red);
+}
+
+.card__input-amount:focus:invalid::placeholder {
+  color: var(--red);
 }
 
 .card__input-conteiner:after {
@@ -538,6 +551,23 @@ button {
 	border-image-slice: 1;
 	margin-right: 10px;
 	margin-top: 14px;
+}
+.footer__form input[type=email]:focus::placeholder {
+  color: var(--green);
+}
+
+.footer__form input[type=email]:valid {
+	border-image: var(--green);
+	color: var(--green);
+}
+
+.footer__form input[type=email]:focus:invalid {
+  color: var(--red);
+  border-image:var(--red);
+}
+
+.footer__form input[type=email]:focus:invalid::placeholder {
+  color: var(--red);
 }
 
 .footer__btn {
@@ -1147,7 +1177,9 @@ button {
 	padding-bottom: 22px;
 }
 
-.donate__title,.donate__text,.card__text {
+.donate__title,
+.donate__text,
+.card__text {
 	width: 300px;
 }
 

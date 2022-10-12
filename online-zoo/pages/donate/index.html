@@ -76,44 +76,44 @@
 
 				<p class="amount-title">Amount</p>
 
-				<fieldset class="donate-range">
+				<fieldset class="donate-range" id="range">
 					<label for="radio5000" class="donate-range__label">
-						$5000
+						<span class="donate__price" data-id="0" data-value="5000">$5000</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio5000">
 					</label>
 					<label for="radio2000" class="donate-range__label">
-						$2000
+						<span class="donate__price" data-id="1" data-value="2000">$2000</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio2000">
 					</label>
 					<label for="radio1000" class="donate-range__label">
-						$1000
+						<span class="donate__price" data-id="2" data-value="1000">$1000</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio1000">
 					</label>
 					<label for="radio500" class="donate-range__label">
-						$500
+						<span class="donate__price" data-id="3" data-value="500">$500</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio500">
 					</label>
 					<label for="radio250" class="donate-range__label">
-						$250
+						<span class="donate__price" data-id="4" data-value="250">$250</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio250">
 					</label>
 					<label for="radio100" class="donate-range__label">
-						$100
+						<span class="donate__price" data-id="5" data-value="100">$100</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio100" checked>
 					</label>
 					<label for="radio50" class="donate-range__label">
-						$50
+						<span class="donate__price" data-id="6" data-value="50">$50</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio50">
 					</label>
 					<label for="radio25" class="donate-range__label">
-						$25
+						<span class="donate__price" data-id="7" data-value="25">$25</span>
 						<input class="donate-range__input" name="donation-sum" type="radio" id="radio25">
 					</label>
 				</fieldset>
 
 					<form class="card__form">
 						<div class="card__input-conteiner">
-							<input type="number" class="card__input-amount" min="0" max="9999" placeholder="Another amount"/>
+							<input type="number" value="100" class="card__input-amount" min="0" max="9999" placeholder="Another amount" pattern="[0-9]{,4}" oninput="if (value.length >= 5) value = value.slice(0,4)" id="input__amount">
 						</div>
 						<div class="card__radio-container">
 							<div class="card__radio">
