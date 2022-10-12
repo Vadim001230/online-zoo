@@ -1,5 +1,4 @@
 //img
-alert('Осталось немного доделать, если у вас есть возможность отложить проверку до вечера, буду очень благодарен')
 const mediaQuery1000 = window.matchMedia('(max-width: 1440px)'),
       mediaQuery640 = window.matchMedia('(max-width: 980px)'),
       mediaQuery320 = window.matchMedia('(max-width: 630px)'),

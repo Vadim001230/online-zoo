@@ -34,31 +34,27 @@ const range = document.getElementById('range');
 const inputAmount = document.getElementById('input__amount');
 const price = document.querySelectorAll('.donate__price');
 
-range.addEventListener( 'click', (event) => {
+range.addEventListener('click', (event) => {
   const element = event.target;
-  const elementIndex = element.getAttribute('data-id');
-  for (i = 0; i < price.length; i++) {
-/*    price[i].style.color = '#333B41';*/
-    if (price[i].getAttribute('data-id') == elementIndex ) {
-/*      price[i].style.color = '#f9804b';*/
-      inputAmount.value = element.getAttribute('data-value');
-    }
-  }
+  inputAmount.value = element.getAttribute('data-value');
 });
 
-/*inputAmount.addEventListener('input', () => {
-  const value = +inputAmount.value;
-  const radioButtons = document.querySelectorAll( '.donate-range__input' );
+inputAmount.oninput = function () {
+  const value = inputAmount.value;
+  const radioButtons = document.querySelectorAll('.donate-range__input');
+  if (value.length >= 5) {
+    inputAmount.value = value.slice(0,4);
+  }
+
   for (i = 0; i < price.length; i++ ) {
-  price[ i ].classList.remove( 'donateSlider__pointText--active' );
-    radioButtons[ i ].checked = false;
+    radioButtons[i].checked = false;
   }
-  for ( i = 0; i < price.length; i++ ) {
-    if ( value == radioButtons[ i ].getAttribute( 'data-value' ) ) {
-      radioButtons[ i ].checked = true;
-      price[ i ].classList.add( 'donateSlider__pointText--active' );
+  for (i = 0; i < price.length; i++) {
+    if (value == radioButtons[i].getAttribute('data-value')) {
+      radioButtons[i].checked = true;
     }
+  }
+}
 
-});
-*/
+
 
