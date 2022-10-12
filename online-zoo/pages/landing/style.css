@@ -893,6 +893,10 @@ button {
 	fill: green;
 }
 
+.popap-hidden {
+	display: none;
+}
+
 /*Media*/
 
 @media (max-width: 1599px) {
@@ -1422,6 +1426,7 @@ main {
 	height: 109px;
 	overflow: hidden;
 	border:  1px solid #FEBDAB;
+	cursor: pointer;
 }
 
 .testimonials__card:nth-child(4),
@@ -1513,6 +1518,97 @@ main {
 .footer__social-two a:hover {
 	box-shadow: inset 0 0 0 1.5em green;
 	transition: 0.3s ease;
+}
+
+/*popap*/
+
+.popap {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(41, 41, 41, 0.5);;
+	z-index: 100;
+}
+
+.popap__card {
+	background: #F1F3F2;
+	border-radius: 20px;
+	position: relative;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 268px;
+	height: 391px;
+	margin: 0 auto;
+	border: 2px solid #F3A9F8;
+}
+
+.popap__conteiner {
+	padding: 15px 0 10px 15px;
+	display: flex;
+}
+
+.popap__close {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -30px;
+  top: -30px;
+	transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.popap__close:hover::after, .popap__close:hover::before {
+  background-color: #4B9200;
+}
+
+.popap__close::after, .popap__close::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  left: 0;
+  top: 10px;
+  background-color: #F9804B;
+  transition: background-color .3s ease;
+}
+
+.popap__close::after {
+	transform: rotate(90deg);
+}
+
+.popap__info {
+	margin-left: 10px;
+}
+
+.popap__img {
+	width: 37px;
+	height: 37px;
+}
+
+.popap__name {
+	line-height: 120%;
+	color: #000;
+}
+
+.popap__place {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 120%;
+	color: #BDBDBD;
+}
+
+.popap__text {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 120%;
+	color: var(--gray);
+	margin-top: 10px;
+	padding: 0 15px 13px;
+	height: 308px;
+	overflow: hidden;
 }
 
 }

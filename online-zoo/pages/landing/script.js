@@ -46,7 +46,7 @@ function closeMenu() {
 burger.addEventListener('click', openMenu);
 blackout.addEventListener('click', closeMenu);
 for (let navLink of navLinks) {
-navLink.addEventListener('click', closeMenu);
+   navLink.addEventListener('click', closeMenu);
 }
 
 // testimonials slider
@@ -60,3 +60,52 @@ testimonialsSlidebar.addEventListener('input', e => {
       testimonialsContent.style.transform = `translateX(-${(testimonialsSlidebar.value - 1) * 297}px)`;
    }
 });
+
+//popap
+
+const popap = document.querySelector('.popap'),
+      popapCard = document.querySelector('.popap__card'),
+      popapClose = document.querySelector('.popap__close'),
+      testimonialsCards = document.querySelectorAll('.testimonials__card');
+      
+const openPopap = function () {
+   popap.classList.remove('popap-hidden');
+   body.classList.add('not-scroll');
+};
+
+const closePopap = function (e) {
+   if (e.target.className === 'popap__close') {
+      popap.classList.add('popap-hidden');
+   } else if (popapClose.classList.contains('active-btn')) {
+      popap.classList.add('popap-hidden');
+   }
+   body.classList.remove('not-scroll');
+};
+
+function leavePopap() {
+   popapClose.classList.add('active-btn');
+}
+function pointPopap() {
+   popapClose.classList.remove('active-btn');
+}
+
+for (let testimonialsCard of testimonialsCards) {
+   testimonialsCard.addEventListener('click', openPopap);
+}
+popapClose.addEventListener('click', closePopap);
+popap.addEventListener('click', closePopap);
+popapCard.addEventListener('mouseleave', leavePopap);
+popapCard.addEventListener('mouseenter', pointPopap);
+
+const insertContentToModal = function (e) {
+  if (e.target.className === 'testimonials__card') {
+    popapCard.innerHTML = `${e.target.innerHTML}`;
+    console.log(e.target.innerHTML)
+  } else if (e.target.className === 'testimonials__photo') {
+    popapCard.innerHTML = `${e.target.parentElement.parentElement.innerHTML}`;
+    console.log(e.target.parentElement.parentElement.innerHTML)
+  } else {
+    popapCard.innerHTML = `${e.target.parentElement.innerHTML}`;
+   console.log(e.target.parentElement.innerHTML)
+  }
+};
