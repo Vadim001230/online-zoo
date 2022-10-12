@@ -1,5 +1,5 @@
-//img
-alert('Если у вас есть возможность отложить проверку этой работы до вечера, буду очень благодарен!')
+//img///////////
+/*alert('Если у вас есть возможность отложить проверку этой работы до вечера, буду очень благодарен!')*/
 const mediaQuery1000 = window.matchMedia('(max-width: 1440px)'),
       mediaQuery640 = window.matchMedia('(max-width: 980px)'),
       mediaQuery320 = window.matchMedia('(max-width: 630px)'),
@@ -19,7 +19,7 @@ if (mediaQuery320.matches) {
    petsRightImg.src = "../../assets/images/strelitzia320.png";
 }
 
-//burger
+//burger///////////
 const blackout = document.querySelector('.blackout'),
       burger = document.querySelector('.burger'),
       body = document.querySelector('body'),
@@ -49,7 +49,7 @@ for (let navLink of navLinks) {
    navLink.addEventListener('click', closeMenu);
 }
 
-// testimonials slider
+// testimonials slider///////////
 const testimonialsContent= document.querySelector('.testimonials__content');
 const testimonialsSlidebar = document.querySelector('.testimonials__slidebar');
 
@@ -61,8 +61,7 @@ testimonialsSlidebar.addEventListener('input', e => {
    }
 });
 
-//popap
-
+//popap///////////
 const popap = document.querySelector('.popap'),
       popapCard = document.querySelector('.popap__card'),
       popapClose = document.querySelector('.popap__close'),
@@ -109,3 +108,26 @@ const insertContentToModal = function (e) {
    console.log(e.target.parentElement.innerHTML)
   }
 };
+/*
+const changeClassesInsertedContent = function () {
+  for (let val of popapCard.childNodes) {
+    if (val.className) {
+      val.className = `modal${val.className.slice(val.className.indexOf('_'))}`;
+    }
+  }
+};
+
+for (let i = 0; i < testimonialsCard.length; i++) {
+  testimonialsCard[i].addEventListener('click', e => {
+    insertContentToModal(e);
+    changeClassesInsertedContent();
+    openModal();
+  });
+}
+
+popap.addEventListener('click', e => {
+  if (e.target.className === 'modal' || e.target.className === 'modal__close') {
+    closeModal();
+  }
+});*/
+
